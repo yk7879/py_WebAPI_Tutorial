@@ -1,11 +1,12 @@
 {
     "name": "pythonDevelopFields",
-    "dockerFile": "dockerfile",
-    "appPort": 3000,
+    "dockerComposeFile": "docker-compose.yml",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash"
     },
+    "service": "pythonDevelopContainer",
     "extensions": [
         "dbaeumer.vscode-eslint"
-    ]
+    ],
+    "workspaceFolder": "/pysrc"
 }

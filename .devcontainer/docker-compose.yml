@@ -1,23 +1,14 @@
 version: '3'
+
 services: 
-    pythonDevelopContainer:
+    pythonDevelopContainer: 
         image: python:3.8-buster
         volumes: 
-            - ../src:/pysrc
+            - ../../Practice:/pysrc
         environment: 
             LANG ja_JP: UTF-8
             LANGUAGE ja_JP: ja
             LC_ALL ja_JP: UTF-8
-        command: "apt-get update && apt-get install -y vim"
-
-
-# ENV LANG ja_JP.UTF-8
-# ENV LANGUAGE ja_JP:ja
-# ENV LC_ALL ja_JP.UTF-8
-
-# RUN apt-get update
-# RUN apt-get install -y vim
-
-# WORKDIR /app
-
-# VOLUME [ "/app" ]
+        ports: 
+            - 3000:3000
+        tty: true
