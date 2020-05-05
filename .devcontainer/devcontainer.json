@@ -6,7 +6,8 @@
     },
     "service": "pythonDevelopContainer",
     "extensions": [
-        "dbaeumer.vscode-eslint"
-    ],
-    "workspaceFolder": "/pysrc"
+		"dbaeumer.vscode-eslint",
+		"ms-python.python"
+	],
+    "workspaceFolder": "/pysrc",
 }
